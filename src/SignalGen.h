@@ -33,27 +33,27 @@ V0.1  -  17/09/2018
 #define	SFSP2_1		0x104	//LED G
 #define	SFSP2_2		0x108	//LED B
 
-#define SFSP1_0		0x080	//Tecla 1
-#define SFSP1_1		0x084	//Tecla 2
-#define SFSP1_2		0x088	//Tecla 3
-#define SFSP1_6		0x098	//Tecla 4
+#define SFSP1_0		0x080	//BUTTON 1
+#define SFSP1_1		0x084	//BUTTON 2
+#define SFSP1_2		0x088	//BUTTON 3
+#define SFSP1_6		0x098	//BUTTON 4
 
-#define GPIO0_4		0x004	//Tecla 1
-#define GPIO0_8		0x008	//Tecla 2
-#define GPIO0_9		0x009	//Tecla 3
-#define GPIO1_9		0x029	//Tecla 4
+#define GPIO0_4		0x004	//BUTTON 1
+#define GPIO0_8		0x008	//BUTTON 2
+#define GPIO0_9		0x009	//BUTTON 3
+#define GPIO1_9		0x029	//BUTTON 4
 
 
 #define	GPIO_PORT0_DIR_OFFSET	0x2000	
-#define GPIO_PORT0_CLR_OFFSET	0x2280	
+#define GPIO_PORT0_CLR_OFFSET	0x2280	//LED 1
 #define GPIO_PORT0_SET_OFFSET	0x2200	
 
 #define	GPIO_PORT1_DIR_OFFSET	0x2004	
-#define GPIO_PORT1_CLR_OFFSET	0x2284	
+#define GPIO_PORT1_CLR_OFFSET	0x2284	//LED 2 y 3
 #define GPIO_PORT1_SET_OFFSET	0x2204	
 
 #define	GPIO_PORT5_DIR_OFFSET	0x2014	
-#define GPIO_PORT5_CLR_OFFSET	0x2294	
+#define GPIO_PORT5_CLR_OFFSET	0x2294	//LED RGB
 #define GPIO_PORT5_SET_OFFSET	0x2214	
 
 #define GPIO_PIN_IRQ	((GPIO_PIN_IRQ_STRUCT *)GPIO_PIN_IRQ_BASE)
