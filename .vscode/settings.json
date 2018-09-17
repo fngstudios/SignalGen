@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "encender_led.h": "c",
+        "cmath": "c"
+    }
+}
