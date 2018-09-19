@@ -83,7 +83,11 @@ V0.1  -  17/09/2018
 #define DMA_INTTCCLEAR		0x40002008	// DMA Interrupt Terminal Count Request Clear Register
 
 #define Signal_Samples 		500
-#define DAC_TOP_VALUE		1024
+#define DAC_TOP_VALUE		254
+#define DAC_MID_VALUE 		DAC_TOP_VALUE/2
+
+
+#define DEBUGING 1
 
 /* LEDs */
 
