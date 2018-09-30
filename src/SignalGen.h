@@ -82,7 +82,8 @@ V0.1  -  17/09/2018
 #define DMA_INTSTAT			0x40002000	// DMA Interrupt Status Register
 #define DMA_INTTCCLEAR		0x40002008	// DMA Interrupt Terminal Count Request Clear Register
 
-#define Signal_Samples 		500
+#define Signal_Samples 		512
+#define Signal_Samples_Cycle Signal_Samples/2
 #define DAC_TOP_VALUE		254
 #define DAC_MID_VALUE 		DAC_TOP_VALUE/2
 

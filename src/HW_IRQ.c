@@ -319,13 +319,10 @@ unsigned int DMA_CONTROL_MASK=0;
 void Generate_Signals(){
 	float pi = 3.14159654;
 	for(int i=0; i < Signal_Samples; i++){
-		S0[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 2*2*pi*i)/Signal_Samples)));//2KHz
-		if(DEBUGING){
-			printf("%d : ",S0[i]);
-		}
-		S1[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 4*2*pi*i)/Signal_Samples)));//4KHz
-		S2[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 8*2*pi*i)/Signal_Samples)));//8KHz
-		S3[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin((16*2*pi*i)/Signal_Samples)));//16KHz
+		S0[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 2*2*pi*i)/Signal_Samples_Cycle)));//2KHz
+		S1[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 4*2*pi*i)/Signal_Samples_Cycle)));//4KHz
+		S2[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 8*2*pi*i)/Signal_Samples_Cycle)));//8KHz
+		S3[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin((16*2*pi*i)/Signal_Samples_Cycle)));//16KHz
 	}
 	for(int i=0; i < Signal_Samples; i++){   //Correccion ver PAG 1351
 		S0[i] = (S0[i] << 6 ) | (1<<16);
