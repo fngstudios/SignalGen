@@ -321,8 +321,8 @@ void Generate_Signals(){
 	for(int i=0; i < Signal_Samples; i++){
 		S0[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 1*2*pi*i)/Signal_Samples)));//2KHz
 		S1[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 2*2*pi*i)/Signal_Samples)));//4KHz
-		S2[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 4*2*pi*i)/Signal_Samples)));//8KHz
-		S3[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 8*2*pi*i)/Signal_Samples)));//16KHz
+		S2[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 3*2*pi*i)/Signal_Samples)));//8KHz
+		S3[i] = (int)(float)(DAC_MID_VALUE+(DAC_MID_VALUE*sin(( 4*2*pi*i)/Signal_Samples)));//16KHz
 	}
 	for(int i=0; i < Signal_Samples; i++){   //Correccion ver PAG 1351
 		S0[i] = (S0[i] << 6 ) | (1<<16);
